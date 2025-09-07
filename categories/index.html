@@ -156,6 +156,54 @@
   transform: translateY(-1px);
   transition: transform 0.2s ease;
 }
+/* 访问控制管理按钮样式 */
+.auth-control-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth-control-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.auth-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+.auth-modal.show {
+  display: flex;
+}
+.auth-modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
 </style>
 <meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/myrealblog/img/background.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/myrealblog/img/showpage.jpg" onerror="this.onerror=null;this.src='/myrealblog/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/myrealblog/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/myrealblog/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/myrealblog/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/myrealblog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page type-categories" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/myrealblog/img/background.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/myrealblog/"><span class="site-name">毕文博的博客</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/myrealblog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">分类</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="category-lists"><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/myrealblog/categories/World-Quant/">World Quant</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/myrealblog/categories/%E5%AD%A6%E4%B9%A0/">学习</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/myrealblog/categories/%E8%AF%BE%E5%86%85%E5%AD%A6%E4%B9%A0/">课内学习</a><span class="category-list-count">1</span></li></ul></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/myrealblog/img/showpage.jpg" onerror="this.onerror=null;this.src='/myrealblog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">毕文博</div><div class="author-info-description">欢迎来到我的博客</div><div class="site-data"><a href="/myrealblog/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/myrealblog/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/myrealblog/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/dearbi"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/dearbi" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2199463351@qq.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://blog.csdn.net/dear_bi_MyOnly?spm=1000.2115.3001.5343" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fas fa-blog"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/09/07/Read-this-First-Starter-Pack/" title="Read this First - Starter Pack">Read this First - Starter Pack</a><time datetime="2025-09-07T02:12:24.000Z" title="发表于 2025-09-07 10:12:24">2025-09-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/09/04/%E5%A4%A7%E4%BA%8C%E5%BC%80%E5%AD%A6%E5%88%9D%E6%9C%9F/" title="大二开学初期">大二开学初期</a><time datetime="2025-09-04T05:02:42.000Z" title="发表于 2025-09-04 13:02:42">2025-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/09/02/hello-world/" title="Hello World">Hello World</a><time datetime="2025-09-02T13:32:07.509Z" title="发表于 2025-09-02 21:32:07">2025-09-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/08/27/World-Quant-%E2%AD%90-How-BRAIN-works/" title="World Quant ⭐ How BRAIN works">World Quant ⭐ How BRAIN works</a><time datetime="2025-08-27T08:39:04.000Z" title="发表于 2025-08-27 16:39:04">2025-08-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/08/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="中外课程学习指南">中外课程学习指南</a><time datetime="2025-08-03T02:46:13.000Z" title="发表于 2025-08-03 10:46:13">2025-08-03</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
@@ -164,7 +212,7 @@
           </div>
           <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/myrealblog/categories/World-Quant/"><span class="card-category-list-name">World Quant</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/myrealblog/categories/%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">学习</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/myrealblog/categories/%E8%AF%BE%E5%86%85%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">课内学习</span><span class="card-category-list-count">1</span></a></li>
-          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/myrealblog/tags/BRAIN/" style="font-size: 1.1em; color: #999">BRAIN</a> <a href="/myrealblog/tags/World-Quant/" style="font-size: 1.1em; color: #999">World Quant</a> <a href="/myrealblog/tags/%E5%A4%A7%E4%BA%8C-%E5%BC%80%E5%AD%A6/" style="font-size: 1.1em; color: #999">-[大二] -[开学]</a> <a href="/myrealblog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">学习笔记</a></div></div><div class="card-widget card-archives">
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/myrealblog/tags/BRAIN/" style="font-size: 1.1em; color: #999">BRAIN</a> <a href="/myrealblog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 1.1em; color: #999">学习笔记</a> <a href="/myrealblog/tags/%E5%A4%A7%E4%BA%8C-%E5%BC%80%E5%AD%A6/" style="font-size: 1.1em; color: #999">-[大二] -[开学]</a> <a href="/myrealblog/tags/World-Quant/" style="font-size: 1.1em; color: #999">World Quant</a></div></div><div class="card-widget card-archives">
     <div class="item-headline">
       <i class="fas fa-archive"></i>
       <span>归档</span>
@@ -192,4 +240,177 @@
         </li>
       
     </ul>
-  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-07T02:15:17.096Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 毕文博</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/myrealblog/js/utils.js"></script><script src="/myrealblog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">5</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-09-07T02:39:24.510Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 毕文博</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/myrealblog/js/utils.js"></script><script src="/myrealblog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><script>
+// 访问控制脚本
+(function() {
+  const ACCESS_CODE = 'bwb';
+  const ADMIN_CODE = 'admin2025';
+  
+  // 防止重复加载
+  if (window.authPageLoaded) return;
+  window.authPageLoaded = true;
+  
+  // 获取主页路径
+  function getHomePath() {
+    const hostname = window.location.hostname;
+    const pathname = window.location.pathname;
+    
+    if (hostname === 'localhost' || hostname === '127.0.0.1') {
+      return '/myrealblog/';
+    }
+    
+    if (hostname.includes('github.io')) {
+      return '/myrealblog/';
+    }
+    
+    return '/';
+  }
+  
+  // 获取验证页面路径
+  function getAuthPath() {
+    const homePath = getHomePath();
+    return homePath + 'auth.html';
+  }
+  
+  // 检查验证状态（仅检查当前会话，不使用持久化存储）
+  function checkAuthStatus() {
+    // 检查当前会话是否已验证
+    return sessionStorage.getItem('current_session_verified') === 'true';
+  }
+  
+  // 设置当前会话验证状态
+  function setSessionVerified() {
+    sessionStorage.setItem('current_session_verified', 'true');
+  }
+  
+  // 检查是否启用访问控制
+  function isAuthEnabled() {
+    const authSettings = localStorage.getItem('blog_auth_settings');
+    if (authSettings) {
+      try {
+        const settings = JSON.parse(authSettings);
+        return settings.enabled !== false;
+      } catch (e) {
+        return true;
+      }
+    }
+    return true;
+  }
+  
+  // 创建管理界面
+  function createAuthManagement() {
+    const button = document.createElement('button');
+    button.className = 'auth-control-btn';
+    button.innerHTML = '🔐';
+    button.title = '访问控制管理';
+    
+    button.onclick = function() {
+      showAuthModal();
+    };
+    
+    document.body.appendChild(button);
+    
+    // 创建模态框
+    const modal = document.createElement('div');
+    modal.className = 'auth-modal';
+    modal.innerHTML = `
+      <div class="auth-modal-content">
+        <h3>访问控制管理</h3>
+        <p>当前状态: <span id="authStatus"></span></p>
+        <p style="font-size: 14px; color: #666; margin: 10px 0;">注意：现在每次访问都需要验证，不会记住验证状态</p>
+        <div style="margin: 20px 0;">
+          <button id="toggleAuth" class="btn" style="margin: 5px; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">切换状态</button>
+        </div>
+        <div style="margin: 15px 0;">
+          <input type="password" id="adminPassword" placeholder="请输入管理密码" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+        </div>
+        <button id="confirmAction" class="btn" style="background: #667eea; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">确认操作</button>
+        <button onclick="closeAuthModal()" style="background: #ccc; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">取消</button>
+      </div>
+    `;
+    
+    document.body.appendChild(modal);
+    
+    // 绑定事件
+    modal.onclick = function(e) {
+      if (e.target === modal) closeAuthModal();
+    };
+  }
+  
+  // 显示管理界面
+  function showAuthModal() {
+    const modal = document.querySelector('.auth-modal');
+    const status = document.getElementById('authStatus');
+    const toggleBtn = document.getElementById('toggleAuth');
+    
+    const enabled = isAuthEnabled();
+    status.textContent = enabled ? '已启用' : '已禁用';
+    status.style.color = enabled ? '#e74c3c' : '#27ae60';
+    toggleBtn.textContent = enabled ? '禁用访问控制' : '启用访问控制';
+    
+    modal.classList.add('show');
+  }
+  
+  // 关闭管理界面
+  window.closeAuthModal = function() {
+    document.querySelector('.auth-modal').classList.remove('show');
+  };
+  
+  // 确认操作
+  document.addEventListener('click', function(e) {
+    if (e.target && e.target.id === 'confirmAction') {
+      const password = document.getElementById('adminPassword').value;
+      if (password !== ADMIN_CODE) {
+        alert('管理密码错误！');
+        return;
+      }
+      
+      const toggleBtn = document.getElementById('toggleAuth');
+      if (toggleBtn.textContent.includes('禁用')) {
+        // 禁用访问控制
+        localStorage.setItem('blog_auth_settings', JSON.stringify({enabled: false}));
+        alert('访问控制已禁用');
+      } else {
+        // 启用访问控制
+        localStorage.setItem('blog_auth_settings', JSON.stringify({enabled: true}));
+        alert('访问控制已启用');
+      }
+      
+      closeAuthModal();
+    }
+  });
+  
+  // 主入口检查
+  function performAuthCheck() {
+    // 如果在验证页面，不做检查
+    if (window.location.pathname.includes('auth.html')) {
+      return;
+    }
+    
+    // 检查是否启用访问控制
+    if (!isAuthEnabled()) {
+      return;
+    }
+    
+    // 检查验证状态
+    if (!checkAuthStatus()) {
+      // 延迟跳转避免立即跳转问题
+      setTimeout(() => {
+        window.location.href = getAuthPath();
+      }, 100);
+    }
+  }
+  
+  // 页面加载完成后执行检查
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      performAuthCheck();
+      createAuthManagement();
+    });
+  } else {
+    performAuthCheck();
+    createAuthManagement();
+  }
+})();
+</script>
+<script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

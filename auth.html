@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>访问验证 - 毕文博的博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        
+        .auth-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .input-group {
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+        }
+        
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .error-message {
+            color: #e74c3c;
+            margin-top: 15px;
+            padding: 10px;
+            background: rgba(231, 76, 60, 0.1);
+            border-radius: 8px;
+            display: none;
+        }
+        
+        .remember-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .remember-option input[type="checkbox"] {
+            margin-right: 8px;
+            transform: scale(1.2);
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="logo">毕</div>
+        <h1>访问验证</h1>
+        <p class="subtitle">请输入访问密码继续访问博客</p>
+        
+        <form id="authForm">
+            <div class="input-group">
+                <label for="password">访问密码</label>
+                <input type="password" id="password" placeholder="请输入访问密码" required>
+            </div>
+            
+            <p style="font-size: 14px; color: #666; margin-bottom: 20px; text-align: center;">
+                注意：现在每次访问都需要验证，关闭浏览器后需重新验证
+            </p>
+            
+            <button type="submit" class="btn">验证访问</button>
+        </form>
+        
+        <div id="errorMessage" class="error-message">
+            密码错误，请重新输入
+        </div>
+        
+        <div class="footer">
+            © 2025 毕文博的博客 - 安全访问控制
+        </div>
+    </div>
+
+    <script>
+        // 配置参数
+        const ACCESS_CODE = 'bwb';
+        
+        // 获取主页路径
+        function getHomePath() {
+            const hostname = window.location.hostname;
+            
+            // 本地开发环境或 GitHub Pages 环境都使用相同路径
+            if (hostname === 'localhost' || hostname === '127.0.0.1' || hostname.includes('github.io')) {
+                return '/myrealblog/';
+            }
+            
+            // 其他环境默认返回根路径
+            return '/';
+        }
+        
+        // 设置当前会话验证状态
+        function setSessionVerified() {
+            sessionStorage.setItem('current_session_verified', 'true');
+        }
+        
+        // 页面加载时检查状态（验证页面不需要检查）
+        document.addEventListener('DOMContentLoaded', function() {
+            // 聚焦密码输入框
+            document.getElementById('password').focus();
+        });
+        
+        // 处理表单提交
+        document.getElementById('authForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const errorDiv = document.getElementById('errorMessage');
+            
+            if (password === ACCESS_CODE) {
+                // 验证成功
+                setSessionVerified();
+                
+                // 显示成功消息并跳转
+                document.querySelector('.btn').innerHTML = '✓ 验证成功，正在跳转...';
+                document.querySelector('.btn').style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                
+                setTimeout(() => {
+                    window.location.href = getHomePath();
+                }, 1000);
+                
+            } else {
+                // 验证失败
+                errorDiv.style.display = 'block';
+                document.getElementById('password').value = '';
+                document.getElementById('password').focus();
+                
+                // 摇晃动画
+                document.querySelector('.auth-container').style.animation = 'shake 0.5s ease-in-out';
+                setTimeout(() => {
+                    document.querySelector('.auth-container').style.animation = 'fadeInUp 0.6s ease-out';
+                }, 500);
+                
+                // 3秒后隐藏错误消息
+                setTimeout(() => {
+                    errorDiv.style.display = 'none';
+                }, 3000);
+            }
+        });
+        
+        // 添加摇晃动画
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes shake {
+                0%, 100% { transform: translateX(0); }
+                10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+                20%, 40%, 60%, 80% { transform: translateX(5px); }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // 回车键快捷提交
+        document.getElementById('password').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('authForm').dispatchEvent(new Event('submit'));
+            }
+        });
+    </script>
+</body>
+</html>
