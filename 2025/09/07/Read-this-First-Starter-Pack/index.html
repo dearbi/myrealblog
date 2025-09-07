@@ -1,0 +1,349 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Read this First - Starter Pack | 毕文博的博客</title><meta name="author" content="毕文博"><meta name="copyright" content="毕文博"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Table of Contents 研究顾问  金融基础知识  量化分析  如何使用BRAIN平台  股市分析方法   欢迎来到WorldQuant BRAIN 本指南的目的是提供BRAIN顾问项目的基本概述和简单的量化金融概念，以帮助您开始创建Alpha。在完成本指南的学习后，你将获得足够的..."><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Read this First - Starter Pack",
+  "url": "https://dearbi.github.io/myrealblog/2025/09/07/Read-this-First-Starter-Pack/",
+  "image": "https://dearbi.github.io/myrealblog/img/showpage.jpg",
+  "datePublished": "2025-09-07T02:12:24.000Z",
+  "dateModified": "2025-09-07T02:13:19.264Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "毕文博",
+      "url": "https://dearbi.github.io/myrealblog"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/myrealblog/img/favicon.ico"><link rel="canonical" href="https://dearbi.github.io/myrealblog/2025/09/07/Read-this-First-Starter-Pack/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/myrealblog/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/myrealblog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Read this First - Starter Pack',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><style>
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: #49b1f5;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7242;
+}
+.recent-post-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+.card-widget:hover {
+  transform: translateY(-1px);
+  transition: transform 0.2s ease;
+}
+</style>
+<meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/myrealblog/img/background.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/myrealblog/img/showpage.jpg" onerror="this.onerror=null;this.src='/myrealblog/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/myrealblog/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/myrealblog/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/myrealblog/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/myrealblog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/myrealblog/img/background.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/myrealblog/"><span class="site-name">毕文博的博客</span></a><a class="nav-page-title" href="/myrealblog/"><span class="site-name">Read this First - Starter Pack</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/myrealblog/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/myrealblog/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Read this First - Starter Pack</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-09-07T02:12:24.000Z" title="发表于 2025-09-07 10:12:24">2025-09-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-09-07T02:13:19.264Z" title="更新于 2025-09-07 10:13:19">2025-09-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h2><ul>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/documentation/discover-brain/read-first-starter-pack#">研究顾问</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/documentation/discover-brain/read-first-starter-pack#">金融基础知识</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/documentation/discover-brain/read-first-starter-pack#">量化分析</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/documentation/discover-brain/read-first-starter-pack#brain">如何使用BRAIN平台</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/documentation/discover-brain/read-first-starter-pack#">股市分析方法</a></p>
+</li>
+</ul>
+<p><strong>欢迎来到WorldQuant BRAIN</strong></p>
+<p>本指南的目的是提供BRAIN顾问项目的基本概述和简单的量化金融概念，以帮助您开始创建Alpha。在完成本指南的学习后，你将获得足够的知识来尝试回测你的策略。这是一个学习的过程，许多人以前有同样的经历，所以无论你的背景如何，你也可以做到。祝您好运!</p>
+<p>本课程有以下章节供您学习</p>
+<p><strong>研究顾问</strong>—与WorldQuant一起合作的机会</p>
+<p><strong>金融基础知识</strong>–股票市场和它的运作模式</p>
+<p><strong>量化分析</strong>–及其与BRAIN平台的关系</p>
+<p><strong>如何使用BRAIN平台</strong>–快速表达式、操作符和数据集</p>
+<p><strong>常见的金融分析方法及实例</strong>–技术和基本面分析</p>
+<p><strong>研究顾问</strong></p>
+<p><strong>成为我们的顾问</strong></p>
+<p>WorldQuant是一家全球量化资产管理公司。由Igor Tulchinsky创立于2007年，我们的团队在全球拥有超过850名员工，在全球市场上开发和部署各种资产类别的投资策略。我们为全球人才提供机会，让他们在我们项目开展的国家成为研究顾问，并参与到WorldQuant的研究工作中。</p>
+<p><strong>全球社区</strong></p>
+<p>通过我们专有的研究平台产生高质量的预测信号（Alphas），回测金融市场策略，利用市场低效率以盈利，WorldQuant BRAIN通过由数据集和工具、业绩仪表板和价值增强组成的回测平台，以互动方式向用户介绍量化金融世界。</p>
+<p><strong>18,000多名用户， 700多名顾问， 65,000多个数据集</strong></p>
+<p><strong>成为顾问的好处</strong></p>
+<p>作为一名研究顾问，你将有以下机会：</p>
+<ul>
+<li><p>获得基于择优选拔的补助。每天赚取高达120美元（基于用户产出），每季度赚取25.000美元（基于绩效）。</p>
+</li>
+<li><p>符合条件的BRAIN顾问有机会被考虑提供全职职位</p>
+</li>
+<li><p>各种潜在的实习机会</p>
+</li>
+<li><p>成为全球量化分析师精英社区的成员</p>
+</li>
+<li><p>还有更多。</p>
+</li>
+</ul>
+<p><strong>谁有资格？</strong></p>
+<p>不存在特定的背景要求！在科学、技术、工程、数学（STEM）或任何其他与分析和量化高度的相关领域的经验将会是有用的。</p>
+<p>用户仅需在WorldQuant模拟练习中获得10,000分以上，就有资格申请成为顾问。目前，我们只向以下居民提供这个机会：</p>
+<ul>
+<li><p>中国大陆</p>
+</li>
+<li><p>香港</p>
+</li>
+<li><p>台湾</p>
+</li>
+<li><p>肯尼亚</p>
+</li>
+<li><p>韩国</p>
+</li>
+<li><p>印度尼西亚</p>
+</li>
+<li><p>印度</p>
+</li>
+<li><p>马来西亚</p>
+</li>
+<li><p>新加坡</p>
+</li>
+<li><p>英国</p>
+</li>
+<li><p>越南</p>
+</li>
+<li><p>泰国</p>
+</li>
+</ul>
+<p><strong>阅读我们顾问的故事</strong> <strong>:</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=MjJjZTI0MDBiN2IyNTNiYmE0ZGMyZjVlZjE4OTJiMGZfUzhDTWJZY1RJemdOb0ZqQ05YajBoeU5OMEdBTHV3Yk5fVG9rZW46WDR0cWJRbmtYb3Y1Y0t4RXVqZmMzckJMbnJkXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p>Azmi Fauzi – Indonesia印尼</p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.worldquant.com/ideas/consultant-spotlight-aradhana-singh/">Aradhana Singh – India</a>印度</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=OThiYjQyZGU1NTlkMDIxMWQ2MzA5NjViNzRiOTY0NTZfYVVlU09jMXRoaXRwQU1ydDBjSWpOZEc4cTMzUzhqdUJfVG9rZW46UjhRWmIxemlUb3pOZGJ4QUdFZGNoY2hMbktnXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.worldquant.com/ideas/consultant-spotlight-zhuangzhuang-meng/">Zhuangzhuang Meng - China</a>中国</p>
+<p><strong>金融基础知识</strong></p>
+<p>我们的许多顾问都是从非金融专业开始的，所以如果你之前没有金融知识，也不必担心。本节将向你介绍一些基本的知识。</p>
+<p><strong>股票市场如何运作</strong></p>
+<p>股票市场是指为发行、购买和出售在证券交易所或场外交易的股票而存在的公共市场。股票，也被称为股权，代表着对一家公司的部分所有权，而股市是一个投资者可以购买和出售这种可投资资产所有权的地方[1]。</p>
+<p><strong>寻求回报</strong></p>
+<p>投资者寻求从购买股票中获利，如果股票价格比他们的购买价格上涨，他们就会卖出自己的股票以获得利润。例如，如果投资者以每股10美元的价格购买一家公司的股票，随后股票价格上涨到每股15美元，那么投资者就可以通过出售他们的股票实现50%的投资利润[1]。回报被WorldQuant定义为交易资本的回报：</p>
+<p>它表示在这段时间内赚取或损失的金额，以%表示。</p>
+<p><strong>做多一只股票</strong></p>
+<p>持有一只股票的多头头寸意味着买入它，如果股票升值，你就会赚钱。</p>
+<p><strong>做空一只股票</strong></p>
+<p>另一方面，持有股票空头头寸意味着借入你不拥有的股票，通常是从你的经纪人那里借入，然后卖出，并希望其价值下降。当这种情况发生时，你可以以低于你所支付的价格买回它，并把借来的股票还给你的经纪人。</p>
+<p><strong>交易量的定义</strong></p>
+<p>交易量是指在一段时间内，通常在一天内，一种资产或证券的换手率。例如，股票交易量可以指在每天开盘和收盘之间交易的股票数量。交易量，以及交易量在一段时间内的变化，是技术交易者的重要信息。[<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/v/volume.asp#:~:text=Volume%20is%20the%20amount%20of,its%20daily%20open%20and%20close.">2</a>].</p>
+<p><strong>什么是收盘价&#x2F;开盘价</strong></p>
+<p>开盘价是指证券在一个交易日开盘时首次交易的价格。收盘价是交易时段结束前的最后一笔交易的价格。这些价格很重要，因为它们被用来创建传统的线型股票图表，以及在计算移动平均线和其他技术指标时使用。 [<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/c/close.asp">3</a>, <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/o/openingprice.asp#:~:text=The%20opening%20price%20is%20the,is%20its%20daily%20opening%20price.">4</a>].</p>
+<p><strong>进一步阅读和参考资料:</strong></p>
+<p>[1] Corporate Finance Institute. (2022, October 28). Stock market. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://corporatefinanceinstitute.com/resources/wealth-management/stock-market/">https://corporatefinanceinstitute.com/resources/wealth-management/stock-market/</a></p>
+<p>[2] What is volume of a stock, and why does it matter to investors? (2003, November 23). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/v/volume.asp#:~:text=Volume%20is%20the%20amount%20of,its%20daily%20open%20and%20close">https://www.investopedia.com/terms/v/volume.asp#:~:text=Volume%20is%20the%20amount%20of,its%20daily%20open%20and%20close</a></p>
+<p>[3] Close. (2003, November 18). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/c/close.asp">https://www.investopedia.com/terms/c/close.asp</a></p>
+<p>[4] Opening price: Definition, example, trading strategies. (2005, July 3). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/o/openingprice.asp#:~:text=The%20opening%20price%20is%20the,is%20its%20daily%20opening%20price">https://www.investopedia.com/terms/o/openingprice.asp#:~:text=The%20opening%20price%20is%20the,is%20its%20daily%20opening%20price</a></p>
+<p><strong>量化分析</strong></p>
+<p>有许多方法可以确定是做多（买入）一只股票还是做空它。金融学中的定量分析（QA）是一种强调数学和统计分析的方法，以帮助确定一只股票的价值。量化交易分析师（也被称为 “quants”）使用各种数据–包括历史投资和股票市场数据–来开发交易算法和计算机模型。这些计算机模型产生的信息有助于投资者分析投资机会，并制定他们认为将是成功的交易策略 [<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/articles/investing/041114/simple-overview-quantitative-analysis.asp">5</a>].</p>
+<p><strong>关于BRAIN平台</strong></p>
+<p>利用定量分析方法，BRAIN平台是一个全球金融市场回测模拟器，是为探索Alpha研究而创建的。它接受Alpha表达式作为输入，并绘制其盈亏（PnL）作为输出.</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=MjJhMzAyZTI4NWE4NGQ1YzhhZDYwZTY3ZTI0MWExNTFfdUlOSE1iak5wSlJPN2E3c3FlUVFjOEtsYmxOdkc3Y3JfVG9rZW46WU8xS2JweHJQbzN5TUF4TTFxS2MyUkRxbmNjXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p>每天根据历史日期对每个金融工具的输入表达进行评估，并据此构建投资组合。BRAIN平台根据表达式的值对每种金融工具进行投资。它进行交易（买入或卖空），并为每种工具分配权重。</p>
+<p><strong>什么是Alpha？</strong></p>
+<p>Alpha是一种算法，它将输入数据（价格-成交量、新闻、基本面等）转化为一个向量，其中的数值与我们每天要持有的每种金融工具的头寸和权重成正比。</p>
+<p><strong>权重</strong></p>
+<p>想象一下，市场数据是一个矩阵，每一行代表一个日期，每一列代表一只股票。例如，收盘价数据的矩阵可以是这样的:</p>
+<p><em>表格: A、B和C公司各自3天的股票收盘价.</em></p>
+<p>Alpha表达式的作用是将输入矩阵转化为权重输出向量，每个权重对应于一只股票。Alpha输出向量，其权重是对应于股票池中每个工具的值，它看起来可能是这样的:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=M2M0YjI0ODM0YjUwZGM0ZjNmM2JkZGU5MTFhMDU5MzJfQ1gzc0JOanhBM0QzOWNCUnowS2dpcmZ1NzFxQ3NsVE9fVG9rZW46VnBrbGJpejJab3gzczl4TnRkUGNmTXZKbkZjXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p><em>表格:输出向量，表明交易方向以及对公司A、B和C的权重</em></p>
+<p><strong>累积盈亏（PnL）</strong></p>
+<p>我们从Alpha表达式中得到了股票的权重，下一步就是要得到每一天的利润和损失（PnL）。</p>
+<p>从上表中，我的权重_A &#x3D; 0.2，权重_B &#x3D; -0.5，权重_C &#x3D; 0.3。现在，我的投资金额被称为 “账面规模”。假设我的账面金额是100美元。所以我计算我想投资于每只股票的资金：</p>
+<p>money_A &#x3D; 0.2 * 100 USD &#x3D; 20 USD 多头</p>
+<p>money_B &#x3D; -0.5 * 100 USD &#x3D; 50 USD 空头</p>
+<p>money_C &#x3D; 0.3 * 100 USD &#x3D; 30 USD 多头</p>
+<p>现在，我买入价值20美元的A，卖出价值50美元的B，买入价值30美元的C。</p>
+<p>我持有这个投资组合一整天，并在模拟期的第二天把它卖掉。现在在一天之内，股票A、B、C的价格都发生了变化。因此，我的投资组合的总价值也发生了变化，例如从100美元到105美元。因此，我在这一天赚了5美元。</p>
+<p>现在我再次计算股票的Alpha值，再次计算权重，再次交易价值100美元的投资组合。[注：在BRAIN平台上，我们对所有的日子都使用恒定的账面大小，无论你的投资组合是赚钱还是亏钱。］</p>
+<p>在回测期的每一天都要重复这样的操作，以计算和绘制累积的PnL</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=ZTVlNGJhNzJmMTQxZWZjYWUxYjRiYTBiMTEyZjFlZjBfNEVLcE5ncTlrb2hFaXhPckRFOFQ0RDlDZlRzNDJEdUlfVG9rZW46SmI1dmJSNnB2b0hieFh4NFRqUWNjcmRUblJoXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p><strong>降低风险和波动性</strong></p>
+<p>一个好的阿尔法最好是有持续增长的净值，高的年回报率，更重要的是，在累积利润图中的波动很小。如果标准差较低，图表中的波动就会较小。如果图表中显示出高波动&#x2F;波幅，尽管回报率很高，那么阿尔法就不会被认为是足够好。</p>
+<p>WorldQuant旨在开发具有低波动性和低风险的股票多空市场中性阿尔法指数。这种投资具有吸引力，因为它们有望产生比只做多头的投资组合更好的风险调整后的回报。股票多空市场中性策略被对冲基金普遍使用，其目标是最大限度地减少市场风险，并从两只股票的价差变化中获利。</p>
+<p>进一步阅读和参&#x8003;<em>:</em></p>
+<p>[5] What to know about quantitative analysis. (2014, April 11). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/articles/investing/041114/simple-overview-quantitative-analysis.asp">https://www.investopedia.com/articles/investing/041114/simple-overview-quantitative-analysis.asp</a></p>
+<p><strong>如何使用BRAIN平台</strong></p>
+<p>理论够了，让我们深入了解如何在BRAIN平台上编写第一个Alpha。</p>
+<p><strong>不需要编程经验</strong></p>
+<p>对所有没有编程背景的人员来说，使用BRAIN的好消息是，不需要事先有编程经验。</p>
+<p><strong>BRAIN的编码方式</strong></p>
+<p>BRAIN使用快速表达语言，由两个主要元素组成： 数据字段和运算符。</p>
+<p><strong>能否使用Python&#x2F;R&#x2F;MATLAB等进行字母运算？</strong></p>
+<p>我们的一位用户曾问我们： 是否有计划允许用户利用Python&#x2F;MATLAB&#x2F;R与BRAIN API互动，分析数据集并提交Alpha向量？</p>
+<p>我们的答复是：BRAIN平台目前只能使用快速表达式语言。关于API，当API通信以低强度进行时，我们目前不禁止对BRAIN平台进行程序化访问。</p>
+<p><strong>数据字段、数据集</strong></p>
+<p>数据字段指的是一个命名的数据集合，例如 “开盘价 “或 “收盘价”。</p>
+<p>数据集是数据字段的集合<a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/data-and-operators/price-volume-data-for-equity">（点击这里查看）</a>.大多数用户通常从价格、成交量和基本面数据集开始研究。</p>
+<p><strong>运算符</strong></p>
+<p>运算符是实现您Alpha策略所需的一组数学或统计技术，例如数学运算符：+ - &#x2F; * 或横截面运算符，如“排名”（rank）。阅读 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/data-and-operators/operators?_gl=1*je5iyn*_ga*MTAwMTk0NzY2OS4xNjcyNzA5NzU3*_ga_9RN6WVT1K1*MTY3MzM2MDU0OC4zNi4xLjE2NzMzNjQ3MjQuNTkuMC4w">Learn&#x2F;Operators</a> 获取更多详细内容.</p>
+<p>以下是使用数据字段和运算符构建Alpha策略的常见示例:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=YmY4MjY2MGM2ZDA0MWViMmMzZTdlZDk1MWQ0Mzk2NDZfclZXUVlRejZabnNtV0hZRDNVMENHSU5Xd045bjBqeFNfVG9rZW46VVVuM2JxS2hib2poZG94VGZJemNGSFAxbmxlXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p>您可以通过在回测模拟器页面的左下角点击“示例”按钮来尝试一些样本Alpha策略。利用提示并测试几个模拟！点击此处立即尝试: <a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/simulate">Simulate Page</a></p>
+<p><strong>股市分析方法</strong></p>
+<p>您可能会问, 如何想出新Alpha策略的想法？本节将带您了解两个Alpha策略的想法和解释它们背后的思路，分别是技术分析和基本面分析。</p>
+<p><strong>技术分析</strong></p>
+<p>技术分析是一种交易纪律，通过分析交易活动中收集的统计趋势（如价格变动和成交量）来评估投资和识别交易机会。技术分析师相信，一个证券的过去交易活动和价格变化可以是该证券未来价格变动的有价值指标。</p>
+<p>在整个行业中，已经有数百种模式和信号被研究人员开发出来用于支持技术分析交易。这些包括趋势线、通道、移动平均线和动量指标等[<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/t/technicalanalysis.asp">6</a>].</p>
+<p><strong>以成交量作为指标</strong></p>
+<p>如果一家公司的股票成交量很高，意味着许多人在买卖该股票。假设我们的假设是，具有更多交易量的公司比交易量较低的另一家公司更有吸引力。然后我们将更多的权重分配给交易量更高的公司。</p>
+<p>表达这个想法的一种方法是通过以下Alpha表达式:</p>
+<p>1</p>
+<h6 id="Simulation-Settings"><a href="#Simulation-Settings" class="headerlink" title="Simulation Settings"></a>Simulation Settings</h6><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=MjAzMjc1ZWI5YmQ1ZWQyMzdhMmE3ZTM2M2U5YTc0M2FfZUtIdDBNWGJJcTRFWVZMNnZ5WllOV0tmUkpGdWV1elZfVG9rZW46WDVWdmI3RENEb3paMXl4N1JwcmNTSTkxbmxZXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p><strong>基本面分析</strong></p>
+<p>基本面分析是通过检查相关的经济和财务因素来衡量证券的内在价值的一种方法。基本面分析师研究任何可能影响证券价值的因素，从宏观经济因素，如经济状况和行业条件，到微观经济因素，如公司管理的有效性。</p>
+<p>分析师可以将公司的增长率与其所在的行业和部门进行比较，以及提供的其他信息，以确定该公司是否被正确地估值[<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/f/fundamentalanalysis.asp">7</a>].</p>
+<p><strong>存货周转率</strong></p>
+<p>财务比率是基本面数据的比率，可以深入了解公司的健康状况和投资决策。一种常见的财务比率是存货周转率。它是一种活动比率，用于衡量公司销售和替换存货的速度。计算公式为:</p>
+<p><em>销售额除以平均存货.</em></p>
+<p>通常，较高的存货水平与更高的存储成本、保险费用和损耗有关。假设是具有较高存货周转率的股票将具有较差的股票表现，因此将被分配负权重。</p>
+<p>其Alpha表达式如下:</p>
+<p>1</p>
+<h6 id="Simulation-Settings-1"><a href="#Simulation-Settings-1" class="headerlink" title="Simulation Settings"></a>Simulation Settings</h6><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tcnvzc64vul9.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGExMDJhMDc0ZjIxZDNkNTM3MDczNDQyYjAyNmY0OThfVWJ3SktiWFp2aDJjbGR0cENYOGhwTW45dUhSc1lDY0JfVG9rZW46U2NjamI4ZUpPb1hpSlN4MUhnR2N3cHdNbkhiXzE3NTcyMTExODI6MTc1NzIxNDc4Ml9WNA"></p>
+<p><strong>时间序列和横截面</strong></p>
+<p>此外，还有两种经常使用的运算符类别：时间序列和横截面。</p>
+<p>时间序列分析可以用于观察给定变量随时间的变化情况。假设您想分析一家给定股票在一年期间的每日收盘价格时间序列。您可以获取过去一年内该股票每天的所有收盘价格列表，并使用技术分析工具分析时间序列数据，以确定该股票的时间序列是否显示任何季节性。这将帮助您确定该股票是否每年定期经历峰值和谷值[<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/t/timeseries.asp">8</a>].</p>
+<p>或者，您可以使用横截面分析，将特定公司与其同行业竞争对手进行比较。横截面分析可以针对单个公司进行头对头分析，也可以从行业整体的视角来考虑，以确定具有特定优势的公司。基本上，横截面分析可以向投资者展示，基于您所关心的指标，哪家公司是最好的[<a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/c/cross_sectional_analysis.asp">9</a>].</p>
+<p>希望您喜欢本指南！要开始使用，请单击<a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/simulate">Simulate页面</a>左下角的示例按钮。在那里，您将找到一些示例Alpha策略，并得到改进提示。</p>
+<p>如果您有任何研究相关的问题，可以访问我们的<a target="_blank" rel="noopener external nofollow noreferrer" href="https://support.worldquantbrain.com/hc/en-us/community/topics/12913416465431-%E4%B8%AD%E6%96%87%E8%AE%BA%E5%9D%9B">社区论坛</a>并在那里发布您的问题。</p>
+<p><em><strong>进一步阅读和参考资料:</strong></em></p>
+<p>[6] Technical analysis: What it is and how to use it in investing. (2003, November 24). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/t/technicalanalysis.asp">https://www.investopedia.com/terms/t/technicalanalysis.asp</a></p>
+<p>[7] Fundamental analysis: Principles, types, and how to use it. (2003, November 23). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/f/fundamentalanalysis.asp">https://www.investopedia.com/terms/f/fundamentalanalysis.asp</a></p>
+<p>[8] Time series definition. (2006, March 12). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/t/timeseries.asp">https://www.investopedia.com/terms/t/timeseries.asp</a></p>
+<p>[9] What is cross sectional analysis and how does it work? (2007, May 21). Investopedia. <a target="_blank" rel="noopener external nofollow noreferrer" href="https://www.investopedia.com/terms/c/cross_sectional_analysis.asp">https://www.investopedia.com/terms/c/cross_sectional_analysis.asp</a></p>
+<p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://platform.worldquantbrain.com/learn/documentation/discover-brain/about-brain-platform"><strong>Next: Introduction to Alphas</strong></a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://dearbi.github.io/myrealblog">毕文博</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://dearbi.github.io/myrealblog/2025/09/07/Read-this-First-Starter-Pack/">https://dearbi.github.io/myrealblog/2025/09/07/Read-this-First-Starter-Pack/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://dearbi.github.io/myrealblog" target="_blank">毕文博的博客</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/myrealblog/img/showpage.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/myrealblog/2025/09/04/%E5%A4%A7%E4%BA%8C%E5%BC%80%E5%AD%A6%E5%88%9D%E6%9C%9F/" title="大二开学初期"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">大二开学初期</div></div><div class="info-2"><div class="info-item-1">升入今天开学已经第四天了，大二的课程相对于大一来说还是比较少的，有更多的时间去做自己的事情。但是每一门课程都还算有一定难度，所以还需要花时间去学习课内的事情。经过大一一年的时间，对于后面的方向也有了一个初步的认识，经过前一年“横七竖八”的摸索，我还是决定去学习Java方向，“Java已死”虽然说在互联网上被 widely considered as a dead language，但是对于我而言，似乎找不到更好的选择。我现在也不是下定决心考研一条路走到黑，所以希望在大三下之前还是专注于自我技术方面的提升，无论是报了什么课程，还是自己学习，这些都是在未来的的一年里面要去提升的事情。 基于过往来面对未来的思考大一一年，虽然说刚开始ACM的选拔没有进去，但是也阴差阳错进入到了人工智能实验室，虽然说这里训练其实完全取决于学生自己怎么干的，但是成为里面负责人后获取到了一个工位，还是蛮不错的。 </div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/myrealblog/img/showpage.jpg" onerror="this.onerror=null;this.src='/myrealblog/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">毕文博</div><div class="author-info-description">欢迎来到我的博客</div><div class="site-data"><a href="/myrealblog/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/myrealblog/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/myrealblog/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener external nofollow noreferrer" href="https://github.com/dearbi"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/dearbi" rel="external nofollow noreferrer" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:2199463351@qq.com" rel="external nofollow noreferrer" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://blog.csdn.net/dear_bi_MyOnly?spm=1000.2115.3001.5343" rel="external nofollow noreferrer" target="_blank" title="CSDN"><i class="fas fa-blog"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Table-of-Contents"><span class="toc-number">1.</span> <span class="toc-text">Table of Contents</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#Simulation-Settings"><span class="toc-number">1.0.0.0.1.</span> <span class="toc-text">Simulation Settings</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#Simulation-Settings-1"><span class="toc-number">1.0.0.0.2.</span> <span class="toc-text">Simulation Settings</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/09/07/Read-this-First-Starter-Pack/" title="Read this First - Starter Pack">Read this First - Starter Pack</a><time datetime="2025-09-07T02:12:24.000Z" title="发表于 2025-09-07 10:12:24">2025-09-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/09/04/%E5%A4%A7%E4%BA%8C%E5%BC%80%E5%AD%A6%E5%88%9D%E6%9C%9F/" title="大二开学初期">大二开学初期</a><time datetime="2025-09-04T05:02:42.000Z" title="发表于 2025-09-04 13:02:42">2025-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/09/02/hello-world/" title="Hello World">Hello World</a><time datetime="2025-09-02T13:32:07.509Z" title="发表于 2025-09-02 21:32:07">2025-09-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/08/27/World-Quant-%E2%AD%90-How-BRAIN-works/" title="World Quant ⭐ How BRAIN works">World Quant ⭐ How BRAIN works</a><time datetime="2025-08-27T08:39:04.000Z" title="发表于 2025-08-27 16:39:04">2025-08-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/myrealblog/2025/08/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="中外课程学习指南">中外课程学习指南</a><time datetime="2025-08-03T02:46:13.000Z" title="发表于 2025-08-03 10:46:13">2025-08-03</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By 毕文博</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/myrealblog/js/utils.js"></script><script src="/myrealblog/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

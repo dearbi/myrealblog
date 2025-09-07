@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dearbi.github.io/myrealblog/2025/09/07/Read-this-First-Starter-Pack/</loc>
+    
+    <lastmod>2025-09-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dearbi.github.io/myrealblog/2025/08/27/World-Quant-%E2%AD%90-How-BRAIN-works/</loc>
     
     <lastmod>2025-09-04</lastmod>
@@ -67,7 +76,7 @@
 
   <url>
     <loc>https://dearbi.github.io/myrealblog</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,28 +84,28 @@
   
   <url>
     <loc>https://dearbi.github.io/myrealblog/tags/World-Quant/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dearbi.github.io/myrealblog/tags/BRAIN/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dearbi.github.io/myrealblog/tags/%E5%A4%A7%E4%BA%8C-%E5%BC%80%E5%AD%A6/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dearbi.github.io/myrealblog/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -105,21 +114,21 @@
   
   <url>
     <loc>https://dearbi.github.io/myrealblog/categories/World-Quant/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dearbi.github.io/myrealblog/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://dearbi.github.io/myrealblog/categories/%E8%AF%BE%E5%86%85%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
